@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CombinedEditText">
+        <attr name="labelText" format="reference|string"/>
+        <attr name="labelTextSize" format="reference|dimension"/>
+        <attr name="labelTextColor" format="reference|color"/>
+        <attr name="labelWeight" format="reference|float"/>
+        <attr name="inputText" format="reference|string"/>
+        <attr name="inputHint" format="reference|string"/>
+        <attr name="inputTextSize" format="reference|dimension"/>
+        <attr name="android:inputType"/>
+        <attr name="contentWeight" format="reference|float"/>
+        <attr name="warningText" format="reference|string"/>
+        <attr name="warningTextSize" format="reference|dimension"/>
+        <attr name="warningTextColor" format="reference|color"/>
+        <attr name="warningVisibility" format="enum">
+            <enum name="visible" value="0">visible</enum>
+            <enum name="invisible" value="4">invisible</enum>
+            <enum name="gone" value="8">gone</enum>
+        </attr>
+    </declare-styleable>
+</resources>

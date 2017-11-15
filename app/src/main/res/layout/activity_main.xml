@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zooloo.combinededittext.MainActivity">
+
+    <com.zooloo.combinededittext.CombinedEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"
+        app:inputHint="Hint"
+        app:contentWeight="6"
+        app:labelText="Label Text"
+        app:labelWeight="4"
+        app:warningText="This is a warning sample"
+        app:warningTextColor="@color/colorAccent"
+        app:warningVisibility="visible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:text="Button" />
+
+
+</RelativeLayout>
