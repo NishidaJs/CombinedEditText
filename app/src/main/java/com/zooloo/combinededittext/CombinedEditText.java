@@ -121,16 +121,26 @@ public class CombinedEditText extends LinearLayout {
         custom.recycle();
     }
 
+    /**
+    * Overriding this setter, so the listener will set on the input field instead of 
+    * the whole view.
+    */
     @Override
     public void setOnFocusChangeListener(OnFocusChangeListener l) {
         input.setOnFocusChangeListener(l);
     }
-
+    /**
+    * Overriding this setter, so the listener will set on the input field instead of 
+    * the whole view.
+    */
     @Override
     public void setOnClickListener(OnClickListener l) {
         input.setOnClickListener(l);
     }
-
+    /**
+    * Overriding this setter, so the listener will set on the input field instead of 
+    * the whole view.
+    */
     @Override
     public void setOnTouchListener(OnTouchListener l) {
         input.setOnTouchListener(l);
@@ -211,9 +221,16 @@ public class CombinedEditText extends LinearLayout {
         return contentWeight;
     }
 
+    /**
+    * Maybe removed
+    */
     public void setContentWeight(int contentWeight) {
         this.contentWeight = contentWeight;
     }
+    
+    /**
+    * Maybe removed
+    */
     public void setContentWeight(float contentWeight) {
         this.contentWeight = contentWeight;
     }
@@ -224,6 +241,7 @@ public class CombinedEditText extends LinearLayout {
 
     public void setWarningText(String warningText) {
         this.warningText = warningText;
+        warn.setText(this.warningText);
     }
 
     public int getWarningTextSize() {
@@ -240,6 +258,7 @@ public class CombinedEditText extends LinearLayout {
 
     public void setWarningTextColor(ColorStateList warningTextColor) {
         this.warningTextColor = warningTextColor;
+        warn.setTextColor(this.warningTextColor);
     }
 
     public int getWarningVisibilityState() {
@@ -248,5 +267,6 @@ public class CombinedEditText extends LinearLayout {
 
     public void setWarningVisibilityState(int warningVisibilityState) {
         this.warningVisibilityState = warningVisibilityState;
+        warn.setVisibility(this.warningVisibilityState);
     }
 }
